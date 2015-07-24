@@ -1,0 +1,29 @@
+﻿<Window x:Name="MainWindow1" x:Class="挑战杯.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="后台服务端" Height="588" Width="830">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="821">
+            <Menu HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="821">
+                <MenuItem Header="增删菜品" Height="36" Width="80" Click="MenuItem_Click"/>
+            </Menu>
+        </Grid>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Margin="383,45,0,0" TextWrapping="Wrap" Text="订单状态" VerticalAlignment="Top" RenderTransformOrigin="0.789,0.262" Height="30" Width="65" FontSize="16"/>
+        <DataGrid x:Name="DataGrid" ItemsSource="{Binding}" AutoGenerateColumns="False"  HorizontalAlignment="Left" Margin="0,72,0,0" VerticalAlignment="Top" Height="412" Width="821" Background="{x:Null}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="166" Header="餐桌号" Binding="{Binding TableId}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="166" Header="菜品号" Binding="{Binding Id}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="166" Header="制作状态" Binding="{Binding OrderState}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="166" Header="菜品数量" Binding="{Binding Count}" ></DataGridTextColumn>
+                <DataGridTextColumn Width="166" Header="订单序号" Binding="{Binding SeqId}" ></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="手动修改" HorizontalAlignment="Left" Margin="383,499,0,0" VerticalAlignment="Top" Width="74" Height="41" Click="Button_Click" Background="{x:Null}"/>
+        <Button Content="提交修改" HorizontalAlignment="Left" Margin="638,499,0,0" VerticalAlignment="Top" Width="74" Height="41" Background="{x:Null}"/>
+        <Button x:Name="Button_OrderState" Content="订单状态" HorizontalAlignment="Left" Margin="111,499,0,0" VerticalAlignment="Top" Width="74" Height="41" Click="Button_Click" Background="{x:Null}"/>
+        <Label x:Name="TestLabel" Content="Label" HorizontalAlignment="Left" Margin="370,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.1,8.4" Height="36" Width="64"/>
+
+    </Grid>
+</Window>

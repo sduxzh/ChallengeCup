@@ -1,0 +1,18 @@
+﻿<Window x:Name="更新菜品库" x:Class="挑战杯.UpdateFood"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="菜品更新" Height="437" Width="514">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="38,50,0,0" TextWrapping="Wrap" Text="菜品名" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="菜品价格"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="32,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="菜品"/><Run Text="图片"/></TextBlock>
+        <TextBox x:Name="foodName" HorizontalAlignment="Left" Height="23" Margin="112,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Text="请输入菜品名称" GotFocus="foodName_GotFocus" LostFocus="foodName_LostFocus" />
+        <TextBox x:Name="foodPrice" HorizontalAlignment="Left" Height="23" Margin="112,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Text="请输入菜品价格" GotFocus="foodPrice_GotFocus" LostFocus="foodPrice_LostFocus"/>
+        <Button Content="提交" HorizontalAlignment="Left" Margin="67,339,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" Height="29" Click="Button_Click"/>
+        <Button Content="重置" HorizontalAlignment="Left" Margin="308,339,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" Height="29" Click="Button_Click_1"/>
+        <TextBox x:Name="foodProfile" HorizontalAlignment="Left" Height="102" Margin="32,195,0,0" TextWrapping="Wrap" Text="请输入菜品简介" VerticalAlignment="Top" Width="390" GotFocus="foodProfile_GotFocus" LostFocus="foodProfile_LostFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="菜品"/><Run Text="介绍"/></TextBlock>
+        <TextBox x:Name="foodPicture" HorizontalAlignment="Left" Height="23" Margin="112,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Text="请选择要上传的图片" GotFocus="foodPrice_GotFocus" LostFocus="foodPrice_LostFocus"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="397,132,0,0" VerticalAlignment="Top" Width="25" Height="23" Background="{x:Null}"/>
+    </Grid>
+</Window>
